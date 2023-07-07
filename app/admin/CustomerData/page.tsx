@@ -89,12 +89,6 @@ const DataNasabahPage = () => {
               </div>
             </AccordionContent>
             <AccordionContent className="pl-12">
-              <div className="grid grid-cols-2 gap-10 grid-rows-1 w-[86%]">
-                <div>Anggota Id</div>
-                <div>AGT - 001</div>
-              </div>
-            </AccordionContent>
-            <AccordionContent className="pl-12">
               <div className="grid grid-cols-2 gap-10 grid-rows-1 w-[86%] items-center">
                 <div>Aksi</div>
                 <div className="w-[36px] ">
@@ -153,12 +147,6 @@ const DataNasabahPage = () => {
               <div className="grid grid-cols-2 gap-10 grid-rows-1 w-[86%]">
                 <div>Email</div>
                 <div>idabagusheryana@gmail.com</div>
-              </div>
-            </AccordionContent>
-            <AccordionContent className="pl-12">
-              <div className="grid grid-cols-2 gap-10 grid-rows-1 w-[86%]">
-                <div>Anggota Id</div>
-                <div>AGT - 001</div>
               </div>
             </AccordionContent>
             <AccordionContent className="pl-12">

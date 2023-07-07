@@ -5,13 +5,22 @@ import NavbarPage from "../Navbar/page";
 import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-
+import { Label } from "@/components/ui/label";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const DataPinAnggotaPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,31 +35,112 @@ const DataPinAnggotaPage = () => {
         Data Detail Simpanan Nasabah
         <NavbarPage />
       </div>
-      <div className="w-full px-4">
-        <div className="flex w-full max-w-full rounded-[8px] items-center space-x-2 mt-6 border-[1.5px] border-[#4F78E1]">
-          <Input
-            type="search"
-            placeholder="Search..."
-            className="border-none text-gray-600 w-full pr-0"
-          />
-          <Button type="submit" className="bg-[#4F78E1] rounded-r-[8px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="w-5 h-5 text-white"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-              />
-            </svg>
-          </Button>
-        </div>
+
+      {/* Form Add Data Start */}
+      <div className="mx-4">
+        <Dialog>
+          <DialogTrigger asChild>
+            <div className="pt-6 w-full">
+              <Button className="bg-[#4F78E1] rounded-[8px] p-6 w-full text-white hover:bg-[#4F78E1]">
+                Tambah Data
+              </Button>
+            </div>
+          </DialogTrigger>
+          <div className="flex w-full max-w-full rounded-[8px] items-center space-x-2 mt-6 border-[1.5px] border-[#4F78E1]">
+            <Input
+              type="search"
+              placeholder="Search..."
+              className="border-none text-gray-600 w-full pr-0"
+            />
+            <Button type="submit" className="bg-[#4F78E1] rounded-r-[8px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-5 h-5 text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </Button>
+          </div>
+          <DialogContent className="sm:max-w-[425px] w-[88%] bg-white h-auto rounded-[10px]">
+            <DialogHeader>
+              <DialogTitle className="text-left pb-10 pt-4 text-2xl">
+                Tambah Data Detail Simpanan Nasabah
+              </DialogTitle>
+            </DialogHeader>
+
+            <div className="w-full">
+              <div className="grid gap-4">
+                <div className="grid grid-cols-1 items-center gap-4">
+                  <Label htmlFor="name" className="text-left">
+                    Tanggal Menyimpan
+                  </Label>
+                  <Input
+                    id="name"
+                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <div className="grid gap-4">
+                <div className="grid grid-cols-1 items-center gap-4">
+                  <Label htmlFor="name" className="text-left">
+                    Jumlah Menyimpan
+                  </Label>
+                  <Input
+                    id="name"
+                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <div className="grid gap-4">
+                <div className="grid grid-cols-1 items-center gap-4">
+                  <Label htmlFor="name" className="text-left">
+                    Bunga
+                  </Label>
+                  <Input
+                    id="name"
+                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <div className="grid gap-4">
+                <div className="grid grid-cols-1 items-center gap-4">
+                  <Label htmlFor="name" className="text-left">
+                    Total Simpanan
+                  </Label>
+                  <Input
+                    id="name"
+                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <DialogFooter>
+              <Button
+                type="submit"
+                className="bg-[#4F78E1] text-white rounded-[5px] mt-10"
+              >
+                Simpan
+              </Button>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
       </div>
+
       <div className="pt-6">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1" className="border-t">

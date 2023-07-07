@@ -80,22 +80,8 @@ const DataSimAnggotaPage = () => {
             <div className="w-full">
               <div className="grid gap-4">
                 <div className="grid grid-cols-1 items-center gap-4">
-                  <Label htmlFor="name" className="text-left">
-                    Id
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <div className="grid gap-4">
-                <div className="grid grid-cols-1 items-center gap-4">
                   <Label htmlFor="type" className="text-left">
-                    Member Id
+                    Anggota
                   </Label>
                   <div className="w-full">
                     <div className="flex justify-between items-center">
@@ -127,7 +113,7 @@ const DataSimAnggotaPage = () => {
               <div className="grid gap-4">
                 <div className="grid grid-cols-1 items-center gap-4">
                   <Label htmlFor="name" className="text-left">
-                    Date Of Filing
+                    Tanggal Pengajuan
                   </Label>
                   <Input
                     id="name"
@@ -174,7 +160,7 @@ const DataSimAnggotaPage = () => {
                 type="submit"
                 className="bg-[#4F78E1] text-white rounded-[5px] mt-10"
               >
-                Submit
+                Simpan
               </Button>
             </DialogFooter>
           </DialogContent>

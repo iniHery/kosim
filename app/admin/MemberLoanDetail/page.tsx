@@ -115,7 +115,7 @@ const DataPinAnggotaPage = () => {
               <div className="grid gap-1">
                 <div className="grid grid-cols-1 items-center gap-1">
                   <Label htmlFor="name" className="text-left text-[12px]">
-                    Jumlah Pinjaman
+                    Total Pinjaman
                   </Label>
                   <Input
                     id="name"
@@ -129,7 +129,7 @@ const DataPinAnggotaPage = () => {
               <div className="grid gap-1">
                 <div className="grid grid-cols-1 items-center gap-1">
                   <Label htmlFor="name" className="text-left text-[12px]">
-                    Total Pembayaran
+                    Jumlah Pembayaran
                   </Label>
                   <Input
                     id="name"
@@ -168,7 +168,7 @@ const DataPinAnggotaPage = () => {
               <div className="grid gap-1">
                 <div className="grid grid-cols-1 items-center gap-1">
                   <Label htmlFor="name" className="text-left text-[12px]">
-                    Fine
+                    Denda
                   </Label>
                   <Input
                     id="name"

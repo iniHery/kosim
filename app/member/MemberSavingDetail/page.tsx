@@ -40,13 +40,6 @@ const DataPinAnggotaPage = () => {
       {/* Form Add Data Start */}
       <div className="mx-4">
         <Dialog>
-          <DialogTrigger asChild>
-            <div className="pt-6 w-full">
-              <Button className="bg-[#4F78E1] rounded-[8px] p-6 w-full text-white hover:bg-[#4F78E1]">
-                Tambah Data
-              </Button>
-            </div>
-          </DialogTrigger>
           <div className="flex w-full max-w-full rounded-[8px] items-center space-x-2 mt-6 border-[1.5px] border-[#4F78E1]">
             <Input
               type="search"
@@ -70,75 +63,6 @@ const DataPinAnggotaPage = () => {
               </svg>
             </Button>
           </div>
-          <DialogContent className="sm:max-w-[425px] w-[88%] bg-white h-auto rounded-[10px]">
-            <DialogHeader>
-              <DialogTitle className="text-left pb-10 pt-4 text-2xl">
-                Tambah Data Detail Simpanan Anggota
-              </DialogTitle>
-            </DialogHeader>
-
-            <div className="w-full">
-              <div className="grid gap-4">
-                <div className="grid grid-cols-1 items-center gap-4">
-                  <Label htmlFor="name" className="text-left">
-                    Tanggal Menyimpan
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <div className="grid gap-4">
-                <div className="grid grid-cols-1 items-center gap-4">
-                  <Label htmlFor="name" className="text-left">
-                    Jumlah Menyimpan
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <div className="grid gap-4">
-                <div className="grid grid-cols-1 items-center gap-4">
-                  <Label htmlFor="name" className="text-left">
-                    Bunga
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <div className="grid gap-4">
-                <div className="grid grid-cols-1 items-center gap-4">
-                  <Label htmlFor="name" className="text-left">
-                    Total Simpanan
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <DialogFooter>
-              <Button
-                type="submit"
-                className="bg-[#4F78E1] text-white rounded-[5px] mt-10"
-              >
-                Simpan
-              </Button>
-            </DialogFooter>
-          </DialogContent>
         </Dialog>
       </div>
       {/* From Add Data End */}
@@ -274,7 +198,7 @@ const DataPinAnggotaPage = () => {
             </AccordionContent>
             <AccordionContent className="pl-12">
               <div className="grid grid-cols-2 gap-10 grid-rows-1 w-[86%]">
-                <div>Bunga</div>
+                <div>Bunga Per-bulan</div>
                 <div>Rp 0,-</div>
               </div>
             </AccordionContent>

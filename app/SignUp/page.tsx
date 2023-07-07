@@ -12,7 +12,7 @@ const SignUpPage = () => {
           <div className="flex flex-col pt-[10%]">
             <h1 className="font-bold text-5xl">Hi!</h1>
             <p className="font-light text-md pt-2 text-gray-500">
-              Create a new account
+              Buat Akun Baru
             </p>
           </div>
           <form className="pt-[20%]">

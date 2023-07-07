@@ -41,13 +41,6 @@ const DataPinAnggotaPage = () => {
       {/* Form Add Data Start */}
       <div className="mx-4">
         <Dialog>
-          <DialogTrigger asChild>
-            <div className="pt-6 w-full">
-              <Button className="bg-[#4F78E1] rounded-[8px] p-6 w-full text-white hover:bg-[#4F78E1]">
-                Tambah Data
-              </Button>
-            </div>
-          </DialogTrigger>
           <div className="flex w-full max-w-full rounded-[8px] items-center space-x-2 mt-6 border-[1.5px] border-[#4F78E1]">
             <Input
               type="search"
@@ -71,122 +64,6 @@ const DataPinAnggotaPage = () => {
               </svg>
             </Button>
           </div>
-
-          <DialogContent className="sm:max-w-[425px] w-[88%] h-[88%] bg-white rounded-[10px]">
-            <DialogHeader>
-              <DialogTitle className="text-left text-xl pb-6">
-                Tmbah Data Detail Pinjaman Anggota
-              </DialogTitle>
-            </DialogHeader>
-
-            <div className="w-full">
-              <div className="grid gap-1">
-                <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="type" className="text-left text-[12px]">
-                    Tanggal Pembayaran
-                  </Label>
-                  <div className="w-full">
-                    <div className="flex justify-between items-center">
-                      <Input
-                        id="name"
-                        className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                      />
-                      <div className="px-4">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          className="w-5 h-5"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <div className="grid gap-1">
-                <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="name" className="text-left text-[12px]">
-                    Jumlah Pinjaman
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <div className="grid gap-1">
-                <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="name" className="text-left text-[12px]">
-                    Total Pembayaran
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <div className="grid gap-1">
-                <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="name" className="text-left text-[12px]">
-                    Bunga
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <div className="grid gap-1">
-                <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="name" className="text-left text-[12px]">
-                    Sisa
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="w-full">
-              <div className="grid gap-1">
-                <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="name" className="text-left text-[12px]">
-                    Fine
-                  </Label>
-                  <Input
-                    id="name"
-                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <DialogFooter>
-              <Button
-                type="submit"
-                className="bg-[#4F78E1] text-white rounded-[5px] mt-10"
-              >
-                Simpan
-              </Button>
-            </DialogFooter>
-          </DialogContent>
         </Dialog>
       </div>
       {/* From Add Data End */}

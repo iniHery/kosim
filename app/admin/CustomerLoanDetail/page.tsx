@@ -91,7 +91,7 @@ const DataPinAnggotaPage = () => {
             </AccordionContent>
             <AccordionContent className="pl-12">
               <div className="grid grid-cols-2 gap-10 grid-rows-1 w-[86%]">
-                <div>Fine</div>
+                <div>Denda</div>
                 <div>Rp 0,-</div>
               </div>
             </AccordionContent>
@@ -214,7 +214,7 @@ const DataPinAnggotaPage = () => {
             </AccordionContent>
             <AccordionContent className="pl-12">
               <div className="grid grid-cols-2 gap-10 grid-rows-1 w-[86%]">
-                <div>Fine</div>
+                <div>Denda</div>
                 <div>Rp 0,-</div>
               </div>
             </AccordionContent>

@@ -34,7 +34,7 @@ const DataPinAnggotaPage = () => {
   return (
     <section className="bg-white w-full max-w-full h-full">
       <div>
-        Data Pinjaman Anggotas
+        Data Pinjaman Anggota
         <NavbarPage />
       </div>
       {/* <div>Search</div> */}
@@ -77,11 +77,44 @@ const DataPinAnggotaPage = () => {
                 Tambah Data Pinjaman Anggota
               </DialogTitle>
             </DialogHeader>
+
+            <div className="w-full">
+              <div className="grid gap-1">
+                <div className="grid grid-cols-1 items-center gap-1">
+                  <Label htmlFor="type" className="text-left text-[12px]">
+                    Anggota
+                  </Label>
+                  <div className="w-full">
+                    <div className="flex justify-between items-center">
+                      <Input
+                        id="name"
+                        className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
+                      />
+                      <div className="px-4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          className="w-5 h-5"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="w-full">
               <div className="grid gap-1">
                 <div className="grid grid-cols-1 items-center gap-1">
                   <Label htmlFor="name" className="text-left text-[12px]">
-                    Id
+                    Tipe
                   </Label>
                   <Input
                     id="name"
@@ -94,63 +127,13 @@ const DataPinAnggotaPage = () => {
             <div className="w-full">
               <div className="grid gap-1">
                 <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="type" className="text-left text-[12px]">
-                    Type
+                  <Label htmlFor="name" className="text-left text-[12px]">
+                    Jumlah
                   </Label>
-                  <div className="w-full">
-                    <div className="flex justify-between items-center">
-                      <Input
-                        id="name"
-                        className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                      />
-                      <div className="px-4">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          className="w-5 h-5"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <div className="grid gap-1">
-                <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="type" className="text-left text-[12px]">
-                    Amount
-                  </Label>
-                  <div className="w-full">
-                    <div className="flex justify-between items-center">
-                      <Input
-                        id="name"
-                        className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                      />
-                      <div className="px-4">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          className="w-5 h-5"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
+                  <Input
+                    id="name"
+                    className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
+                  />
                 </div>
               </div>
             </div>
@@ -159,7 +142,7 @@ const DataPinAnggotaPage = () => {
               <div className="grid gap-1">
                 <div className="grid grid-cols-1 items-center gap-1">
                   <Label htmlFor="name" className="text-left text-[12px]">
-                    Date Of Filing
+                    Tanggal Pengajuan
                   </Label>
                   <Input
                     id="name"
@@ -205,44 +188,12 @@ const DataPinAnggotaPage = () => {
               <div className="grid gap-1">
                 <div className="grid grid-cols-1 items-center gap-1">
                   <Label htmlFor="name" className="text-left text-[12px]">
-                    Collateral
+                    Agunan
                   </Label>
                   <Input
                     id="name"
                     className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
                   />
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <div className="grid gap-1">
-                <div className="grid grid-cols-1 items-center gap-1">
-                  <Label htmlFor="type" className="text-left text-[12px]">
-                    Member Id
-                  </Label>
-                  <div className="w-full">
-                    <div className="flex justify-between items-center">
-                      <Input
-                        id="name"
-                        className="border-[#F2F2F2] rounded-[5px] bg-[#F2F2F2] focus:outline-none focus:border-2 focus:border-[#4F78E1]"
-                      />
-                      <div className="px-4">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          className="w-5 h-5"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                            clip-rule="evenodd"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

@@ -8,9 +8,9 @@ const SignInPage = () => {
       <div className="flex items-center justify-center bg-white ">
         <div className="max-w-md w-full mx-auto p-6 sm:px-8 ">
           <div className="flex flex-col pt-[10%]">
-            <h1 className="font-bold text-5xl">Welcome!</h1>
+            <h1 className="font-bold text-5xl">Selamat Datang!</h1>
             <p className="font-light text-md pt-2 text-gray-500">
-              Sign In to continue
+              Sign in to continue
             </p>
           </div>
           <div className="pt-[36%]">
@@ -20,7 +20,7 @@ const SignInPage = () => {
                 className="flex justify-between items-center w-full max-w-full border-2 border-[#4F78E1] rounded-[10px] bg-[#4F78E1]"
               >
                 <button className="w-full  text-white px-3 py-2 rounded-[10px] focus:outline-none focus:ring focus:ring-[#4F78E1]">
-                  Sign In with Google account
+                  Masuk dengan Akun Google
                 </button>
                 <div className="bg-white w-[44px] h-[44px] flex items-center justify-center rounded-r-[10px]">
                   <Image
@@ -45,7 +45,7 @@ const SignInPage = () => {
                 htmlFor="email"
                 className="block text-gray-700 text-sm font-reguler mb-1"
               >
-                Usrname or Email Address
+                Nama Pengguna atau Alamat Email
               </label>
               <input
                 type="email"
@@ -59,13 +59,13 @@ const SignInPage = () => {
                   htmlFor="password"
                   className="text-gray-700 text-sm font-reguler mb-1"
                 >
-                  Password
+                  Kata Sandi
                 </label>
                 <label
                   htmlFor="password"
                   className="pl-20 text-[#4F78E1] text-xs font-light mb-1"
                 >
-                  Forgot password?
+                  Lupa Password?
                 </label>
               </div>
 
